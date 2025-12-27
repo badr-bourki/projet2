@@ -1,0 +1,184 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Main Content ===== */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+    margin: 15px 0 20px 20px;
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* ===== Forms ===== */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* ===== Images & Media ===== */
+img, video, audio {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ===== Div & Span Styling ===== */
+.container {
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+span.highlight {
+    background-color: #FFD700;
+    color: #000;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* ===== Semantic Elements ===== */
+section, article, aside {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* ===== Hover Effects & Transitions ===== */
+h1:hover, h2:hover, h3:hover {
+    color: #4CAF50;
+    transition: 0.3s;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    main {
+        padding: 20px;
+    }
+}
